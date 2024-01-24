@@ -877,10 +877,10 @@
         document.body.setAttribute('style', '--bg-color:' + Telegram.WebApp.backgroundColor);
     });
     bgColorInput.addEventListener('change', function (e) {
-        const color                                         = e.target.value;
+        const color   = e.target.value;
         document.getElementById('bg_color_val').textContent = color;
-        headerColorSel.value                                = 'custom';
-        prevBgColorVal                                      = document.getElementById('bg_color_sel').value;
+        headerColorSel.value  = 'custom';
+        prevBgColorVal = document.getElementById('bg_color_sel').value;
         Telegram.WebApp.setBackgroundColor(color);
         document.body.setAttribute('style', '--bg-color:' + Telegram.WebApp.backgroundColor);
     });
@@ -894,7 +894,7 @@
             Telegram.WebApp.setBackgroundColor(colorKey);
             document.body.setAttribute('style', '--bg-color:' + Telegram.WebApp.backgroundColor);
             bgColorInput.value = Telegram.WebApp.backgroundColor;
-            prevBgColorVal     = headerColorSel.value;
+            prevBgColorVal = headerColorSel.value;
         }
     });
 
